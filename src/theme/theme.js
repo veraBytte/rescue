@@ -21,24 +21,35 @@ const theme = createTheme({
   },
   typography: {
     titulos: {
-      fontSize: '1.75rem',
-      fontWeight: 700,
+      fontSize: '18px',
+      fontWeight: 600,
+      lineHeight: '24px',
+      fontFamily:'lato',
+      
+      
+      
       // ... otros estilos que quieras agregar
     },
     subtitulos: {
-      fontSize: '1.25rem',
+      fontSize: '18px',
       fontWeight: 500,
-      // ... otros estilos que quieras agregar
+      fontFamily:'lato'
+      
+      // .. otros estilos que quieras agregar
     },
     parrafos: {
-      fontSize: '0.75rem',
-      fontWeight: 300,
+      fontSize: '28px',
+      fontWeight: 500,
+      lineHeight: '33px',
+      fontFamily:'lato',
+      
       // ... otros estilos que quieras agregar
     },
     parrafosColor: {
       fontSize: '0.75rem',
       fontWeight: 300,
-      backgroundColor: '#C2C2C2'
+      backgroundColor: '#C2C2C2',
+      fontFamily:'lato'
       // ... otros estilos que quieras agregar
     },
   },

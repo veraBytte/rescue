@@ -1,17 +1,46 @@
 import React from 'react';
-import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Container, Grid, Typography, Input, TextField } from '@mui/material';
+import  heroJPG from '../../assets/monedasHierba.jpg'
 
 function LandingPage() {
+ 
   return (
     <Container>
-      <Box sx={{ my: 4 }}>
-        {/* Imagen de Encabezado o Carrousel */}
-        <Box sx={{ mb: 4 }}>
-          <img 
-            src="https://horizonteadigital.com/wp-content/uploads/2013/12/Go-green-HD-wallpaper.jpg" 
-            alt="Descripción de la imagen" 
-            style={{ width: '100%', borderRadius: '8px' }} 
-          />
+      <Box sx={{ my: 4,      
+      }}>
+      
+       <Box sx={{ my: 4,
+      
+      backgroundImage: `url(${heroJPG})`,
+      backgroundRepeat:"no-repeat",
+        width: window.innerWidth <= 768 ? '360px' : '100%',
+        height: window.innerWidth <= 768 ? '488px' : 'auto',
+        backgroundsize:'contain',
+        backgroundPosition:'center',
+      
+      
+       
+      }}>
+          <box sx={{m:2}}>
+          <TextField id="outlined-basic" label= "Outlined" variant='outlined'/>
+          </box>
+
+       <Box
+       sx={
+        {
+          my: 3,
+        }
+       }
+       >
+         <box sx={{width:'328px', height:'24px'}}>
+         <Typography sx={{ typography: 'titulos' }} component="h2">FINANCIAMIENTO SOSTENIBLE</Typography>
+        </box>
+         <box sx={{width:'240px', height:'264px'}}>
+         <Typography sx={{typography: 'parrafos', my:2, width:'50%'}}> Impulsamos el desarrollo de finanzas de impacto, liderando la transición hacia un modelo financiero sostenible</Typography>
+        </box>
+        </Box>
+         
+         
         </Box>
 
         {/* Tarjetas de Información */}
