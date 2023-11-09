@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-
+/* Paleta de colores actualizada */
 const theme = createTheme({
   palette: {
     primary: {
