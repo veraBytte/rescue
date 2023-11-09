@@ -25,6 +25,7 @@ const theme = createTheme({
       fontWeight: 600,
       lineHeight: '24px',
       fontFamily:'lato',
+      color: 'white',
       
       
       
@@ -42,6 +43,8 @@ const theme = createTheme({
       fontWeight: 500,
       lineHeight: '33px',
       fontFamily:'lato',
+      color: 'white',
+      
       
       // ... otros estilos que quieras agregar
     },

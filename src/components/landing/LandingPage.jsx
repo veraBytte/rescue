@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Card, CardContent, CardMedia, Container, Grid, Typography, Input, TextField } from '@mui/material';
 import  heroJPG from '../../assets/monedasHierba.jpg'
 
+
 function LandingPage() {
  
   return (
@@ -9,34 +10,39 @@ function LandingPage() {
       <Box sx={{ my: 4,      
       }}>
       
-       <Box sx={{ my: 4,
-      
-      backgroundImage: `url(${heroJPG})`,
-      backgroundRepeat:"no-repeat",
-        width: window.innerWidth <= 768 ? '360px' : '100%',
-        height: window.innerWidth <= 768 ? '488px' : 'auto',
-        backgroundsize:'contain',
-        backgroundPosition:'center',
-      
-      
-       
-      }}>
+      <Box sx={{ 
+  my: 4,
+  backgroundImage: `url(${heroJPG})`,
+  backgroundRepeat:"no-repeat",
+  width: window.innerWidth <= 768 ? '360px' : '100%',
+  height: window.innerWidth <= 768 ? '488px' : 'auto',
+  backgroundSize:'contain',
+  backgroundPosition:'center',
+  position: 'relative',
+
+  '::after': {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    backgroundColor: 'rgba(9, 9, 9, 0.7)',
+  },
+}}>
+
+
           <box sx={{m:2}}>
           <TextField id="outlined-basic" label= "Outlined" variant='outlined'/>
           </box>
 
        <Box
-       sx={
-        {
-          my: 3,
-        }
-       }
        >
-         <box sx={{width:'328px', height:'24px'}}>
-         <Typography sx={{ typography: 'titulos' }} component="h2">FINANCIAMIENTO SOSTENIBLE</Typography>
-        </box>
-         <box sx={{width:'240px', height:'264px'}}>
-         <Typography sx={{typography: 'parrafos', my:2, width:'50%'}}> Impulsamos el desarrollo de finanzas de impacto, liderando la transición hacia un modelo financiero sostenible</Typography>
+       
+         <Typography sx={{ typography: 'titulos', position:'absolute', left:16, top: 176, mb:1, zIndex: 1 }} component="h2">FINANCIAMIENTO SOSTENIBLE</Typography>
+       
+        <box>
+         <Typography sx={{typography: 'parrafos', width:'240px', height:264, top:208, left:16,  position:'absolute', zIndex: 1}}> Impulsamos el desarrollo de finanzas de impacto, liderando la transición hacia un modelo financiero sostenible</Typography>
         </box>
         </Box>
          
