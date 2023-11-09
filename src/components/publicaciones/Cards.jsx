@@ -7,7 +7,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function Cards(props){
     return (
-      <Card sx={(theme) =>({width:340 , bgcolor:'gray', })}>
+      <Card sx={(theme) =>({width:340 , bgcolor:'grey', })}>
       <CardActionArea>
         <Typography 
           gutterBottom 
