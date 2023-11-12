@@ -1,52 +1,96 @@
 import React from 'react';
-import { Box, Card, CardContent, CardMedia, Container, Grid, Typography, Input, TextField } from '@mui/material';
-import  heroJPG from '../../assets/monedasHierba.jpg'
-
+import { Box, Card, CardContent, CardMedia, Container, Grid, Typography, TextField, InputAdornment  } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import { useTheme } from '@mui/system';
+import heroJPG from '../../assets/monedasHierba.jpg'
 
 function LandingPage() {
- 
+  const theme = useTheme();
+
   return (
     <Container>
-      <Box sx={{ my: 4,      
+      <Box sx={{
+        my: 4,
+
       }}>
+
+        <Box>
+          <Box
+            sx={{
+              width: '360px',
+              height: '488px',
+              position: 'absolute'
+            }}
+          >
+            <img
+              src={heroJPG}
+              alt="Descripción de la imagen"
+              sx={{
+                position: 'absolute',
+                top: '57px',
+                width: '360px',
+                height: '488px'
+              }}
+            />
+            <Box
+              sx={{
+                backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                position: 'absolute',
+                top: '0',
+                width: '100%',
+                height: '100%'
+              }}
+            />
+          </Box>
+          <Box >
+
+
+          <TextField 
+  id="outlined-basic" 
+  label=""
+  placeholder="Buscar Microemprendimientos" 
+  variant="outlined"
+  sx={{
+    width: 328,
+    height: 56,
+    position: 'fixed', 
+    top: 80,
+    left: 16,
+    padding: '0px 16px',
+    zIndex:1,
+    
+    '& .MuiOutlinedInput-root': {
+      borderRadius: '100px',
+      backgroundColor: 'white',
+    },
+     '& .MuiInputBase-input::placeholder':{
+      typography: 'label',
       
-      <Box sx={{ 
-  my: 4,
-  backgroundImage: `url(${heroJPG})`,
-  backgroundRepeat:"no-repeat",
-  width: window.innerWidth <= 768 ? '360px' : '100%',
-  height: window.innerWidth <= 768 ? '488px' : 'auto',
-  backgroundSize:'contain',
-  backgroundPosition:'center',
-  position: 'relative',
+     }
+  }}
+  InputProps={{
+    startAdornment: (
+      <InputAdornment position="start">
+        <SearchIcon />
+      </InputAdornment>
+    ),
+  }}
 
-  '::after': {
-    content: '""',
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
-    backgroundColor: 'rgba(9, 9, 9, 0.7)',
-  },
-}}>
+/>
+
+          </Box>
+
+          <Box
+          >
+
+            <Typography sx={{ typography: 'titulos', position: 'absolute', left: 16, top: 176, mb: 1 }} component="h2">FINANCIAMIENTO SOSTENIBLE</Typography>
+
+            <Box>
+              <Typography sx={{ typography: 'parrafos', width: '240px', height: 264, top: 208, left: 16, position: 'absolute' }}> Impulsamos el desarrollo de finanzas de impacto, liderando la transición hacia un modelo financiero sostenible</Typography>
+            </Box>
+          </Box>
 
 
-          <box sx={{m:2}}>
-          <TextField id="outlined-basic" label= "Outlined" variant='outlined'/>
-          </box>
-
-       <Box
-       >
-       
-         <Typography sx={{ typography: 'titulos', position:'absolute', left:16, top: 176, mb:1, zIndex: 1 }} component="h2">FINANCIAMIENTO SOSTENIBLE</Typography>
-       
-        <box>
-         <Typography sx={{typography: 'parrafos', width:'240px', height:264, top:208, left:16,  position:'absolute', zIndex: 1}}> Impulsamos el desarrollo de finanzas de impacto, liderando la transición hacia un modelo financiero sostenible</Typography>
-        </box>
-        </Box>
-         
-         
         </Box>
 
         {/* Tarjetas de Información */}
