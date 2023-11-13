@@ -31,6 +31,14 @@ const theme = createTheme({
       
       // ... otros estilos que quieras agregar
     },
+
+    label:{
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+      fontFamily:'lato',
+      color: '#090909',
+    },
     subtitulos: {
       fontSize: '18px',
       fontWeight: 500,
