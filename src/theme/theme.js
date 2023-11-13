@@ -27,8 +27,20 @@ const theme = createTheme({
       fontFamily:'lato',
       color: 'white',
       
+           
+      // ... otros estilos que quieras agregar
+    },
+
+    objetivos: {
+      fontSize: '22px',
+      fontWeight: 700,
+      lineHeight: '25px',
+      fontFamily:'lato',
+      textAlign:'center',
+      color: 'rgba(9, 60, 89, 1)',
+  
       
-      
+           
       // ... otros estilos que quieras agregar
     },
 
@@ -63,6 +75,13 @@ const theme = createTheme({
       fontFamily:'lato'
       // ... otros estilos que quieras agregar
     },
+    parrafosObjetivos: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '20px',
+      fontFamily:'lato',
+      color: 'rgba(9, 9, 9, 1)',
+    }
   },
   shape: {
     borderRadius: 4,  // Valor por defecto
