@@ -63,9 +63,15 @@ function LandingPage() {
                 '& .MuiOutlinedInput-root': {
                   borderRadius: '100px',
                   backgroundColor: 'white',
+                  '& .MuiOutlinedInput-notchedOutline': {
+                    borderColor: 'white' // Aquí cambias el color del borde
+                  }
                 },
                 '& .MuiInputBase-input::placeholder': {
                   typography: 'label',
+                  color:'black',
+                  opacity: 1
+                
 
                 }
               }}

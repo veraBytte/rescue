@@ -50,6 +50,8 @@ const theme = createTheme({
       lineHeight: '24px',
       fontFamily:'lato',
       color: '#090909',
+      
+    
     },
     subtitulos: {
       fontSize: '18px',
