@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#FDFDFD',
+      main: '#FDFDFD',
       dark: '#090909'
     },
     gray: {
@@ -26,6 +26,7 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily:['Lato', 'cursive'].join(','),
     titulos: {
       fontSize: '1.75rem',
       fontWeight: 700,

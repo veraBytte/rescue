@@ -22,7 +22,7 @@ export default function Publicaciones() {
       description : 'Las decisiones financieras han trascendido la mera maximización del rendimiento. Actualmente, muchos inversores desean que sus decisiones reflejen sus valores éticos y morales, dando lugar a las inversiones éticas o sostenibles.',
     },
   ])
-
+  
   return (
     <div className='cardContainer'>
       {publicacion.map((publi, index) => {
