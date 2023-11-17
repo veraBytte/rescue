@@ -3,7 +3,8 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#FDFDFD',
+      main: '#171616',
+      light: '#FDFDFD',
       dark: '#090909'
     },
     gray: {
@@ -55,6 +56,9 @@ const theme = createTheme({
     borderRadiusMedium: 8,
     borderRadiusLarge: 16,
   },
+  zIndex:{
+    header: 10
+  }
   // Podes agregar más configuraciones del tema aca cuando necesites
 });
 
