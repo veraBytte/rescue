@@ -1,38 +1,43 @@
-import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import React, { useState } from 'react';
+import { AppBar, Toolbar, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import CustomDrawer from './CustomDrawer'; // Importa el nuevo componente de Drawer
 
 function Navbar() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isMenuIcon, setIsMenuIcon] = useState(true); // Estado para controlar el icono
+  const userType = 'adminUser'; //  establecer 'normalUser' o 'adminUser' según corresponda
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+    setIsMenuIcon(isDrawerOpen); // Cambia el icono al abrir/cerrar el Drawer
+  };
+
   return (
-    <AppBar position="static" sx={(theme) => ({ bgcolor: "naranjas.medium" })}>
-      <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
-        <Typography variant="h6" style={{ flexGrow: 1 }}>
-          Nombre sitio
-        </Typography>
-        <Button color="inherit" href="/">
-          Inicio
-        </Button>
-        <Button color="inherit" href="/dashboard">
-          Dashboard
-        </Button>
-        <Button color="inherit" href="/layout">
-          Layout
-        </Button>
-        <Button color="inherit" href="/publicaciones">
-          Publicaciones
-        </Button>
-        <Button color="inherit" href="/proveedores">
-          Proveedores
-        </Button>
-      </Toolbar>
-    </AppBar>
+    <div>
+      <AppBar position="static" sx={(theme) => ({ bgcolor: theme.palette.primary.light})}>
+        <Toolbar sx={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}>
+          <IconButton edge="start" color="black" aria-label="menu" sx={{ justifySelf: 'start' }} onClick={toggleDrawer}>
+            {isMenuIcon ? <MenuIcon /> : <CloseIcon />} {/* Renderiza el icono correspondiente */}
+          </IconButton>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://imgur.com/dQ4iUZf">
+              <img src="https://i.imgur.com/dQ4iUZf.jpg" alt="Logo" width="120px" height="56px" />
+            </a>
+          </div>
+          {/* Muestra la imagen del administrador si el usuario es de tipo 'adminUser' */}
+          <div style={{ justifySelf: 'end' }}>
+            {userType === 'adminUser' && (
+              <a href="https://imgur.com/Uez0fMl">
+                <img src="https://i.imgur.com/Uez0fMl.jpg" alt="Admin Image" width="50px" height="50px" />
+              </a>
+            )}
+          </div>
+        </Toolbar>
+      </AppBar>
+      <CustomDrawer isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} userType={userType}/> {/* Renderiza el nuevo componente de Drawer */}
+    </div>
   );
 }
 
