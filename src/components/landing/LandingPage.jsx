@@ -6,24 +6,28 @@ import heroJPG from '../../assets/monedasHierba.jpg'
 
 function LandingPage() {
   return (
-    <Container >
-
+    <Container sx={{position: 'absolute', top: 4,}} >
+      
       <Box  sx={{
-         width: '360px',
-         height: '2965px',
-         position: 'absolute',  
+         width: '100%',
+         height: 'fitContent',
+         position: 'relative',   
+         
+             
       
 
          
             }} >
 
-        <Box>
+        <Box sx={{position:'relative', maxWidth:'120%', width:'109%',right:16 }}>
         <Box
   sx={{
-    width: '360px',
+    width: '100%',
     height: '488px',
     position: 'absolute',
+   
     top:57,
+  
     backgroundImage: `url(${heroJPG})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
@@ -48,10 +52,11 @@ function LandingPage() {
               variant="outlined"
               sx={{
                 display:'flex',
-                width: 328,
+                width: '100%',
                 height: 56,
                 position: 'relative',
                 top: 80,
+                
                 
                 padding: '0px 16px',
                 zIndex: 1,

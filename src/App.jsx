@@ -21,7 +21,7 @@ function App() {
             <Route path="/layout" element={<Layout_ex />} />
             {/* Agregar rutas necesarias */}
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </ThemeProvider>
     </>
