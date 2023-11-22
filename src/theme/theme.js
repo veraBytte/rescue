@@ -29,26 +29,69 @@ const theme = createTheme({
   typography: {
     fontFamily:['Lato', 'cursive'].join(','),
     titulos: {
-      fontSize: '1.75rem',
-      fontWeight: 700,
+      fontSize: '18px',
+      fontWeight: 600,
+      lineHeight: '24px',
+      fontFamily:'lato',
+      color: 'white',
+      
+           
       // ... otros estilos que quieras agregar
+    },
+
+    objetivos: {
+      fontSize: '22px',
+      fontWeight: 700,
+      lineHeight: '25px',
+      fontFamily:'lato',
+      textAlign:'center',
+      color: 'rgba(9, 60, 89, 1)',
+  
+      
+           
+      // ... otros estilos que quieras agregar
+    },
+
+    label:{
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+      fontFamily:'lato',
+      color: '#090909',
+      
+    
     },
     subtitulos: {
-      fontSize: '1.25rem',
+      fontSize: '18px',
       fontWeight: 500,
-      // ... otros estilos que quieras agregar
+      fontFamily:'lato'
+      
+      // .. otros estilos que quieras agregar
     },
     parrafos: {
-      fontSize: '0.75rem',
-      fontWeight: 300,
+      fontSize: '28px',
+      fontWeight: 500,
+      lineHeight: '33px',
+      fontFamily:'lato',
+      color: 'white',
+      
+      
       // ... otros estilos que quieras agregar
     },
     parrafosColor: {
       fontSize: '0.75rem',
       fontWeight: 300,
-      backgroundColor: '#C2C2C2'
+      backgroundColor: '#C2C2C2',
+      fontFamily:'lato'
       // ... otros estilos que quieras agregar
     },
+    parrafosObjetivos: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '20px',
+      fontFamily:'lato',
+      color: 'rgba(9, 9, 9, 1)',
+    }
   },
   shape: {
     borderRadius: 4,  // Valor por defecto
