@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Cards from './Cards'
 import '../../styles/Publicaciones.css'
+import SearchBar from '../common/SearchBar'
 export default function Publicaciones() {
   const [publicacion, setPublicacion] = useState([
     {
@@ -24,11 +25,29 @@ export default function Publicaciones() {
   ])
   
   return (
+    <div className='container'>
+      <div className='encabezado'>
+      <div className='searchBar'>
+        <SearchBar/>
+      </div>
+      <div>
+        <h3>Publicaciones</h3>
+        <h2>Explorando finanzas de impacto</h2>
+        <h4>Conocé cómo decisiones financieras pueden impactar positivamente en la sociedad y el medio ambiente</h4>
+      </div>
+
+
+      </div>
     <div className='cardContainer'>
+<div className='card'>
+
+
       {publicacion.map((publi, index) => {
         return <Cards key={index} title={publi.title} img={publi.img} date={publi.date} description={publi.description}/>
           
       })}
+      </div>
+    </div>
     </div>
       
   )

@@ -12,5 +12,25 @@
     align-items: center;
     justify-content: center;
     background: url(/img/backgroundPublicaciones.svg);
+    background-repeat:repeat-y;
+}
+
+.card{
+    margin-top: 2rem;
+}
+
+
+.searchBar{
+    position: relative;
+    top:-3.5rem;
+    margin-bottom: 1rem;
+}
+
+.encabezado{
+    background: url(../assets/monedasHierba.jpg);
     background-repeat: no-repeat;
+    height: 488px;
+    background-position: 'center';
+    background-size:cover ;
+    background-repeat: 'no-repeat';
 }
