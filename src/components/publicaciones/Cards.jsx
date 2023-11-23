@@ -49,14 +49,18 @@ export default function Cards(props){
       </CardActionArea>
       <CardActions 
       sx={{justifyContent:'center'}}>
-        <Button size="small" sx={(theme) =>({
-          color: 'blue.main',
-          fontWeight: '600',
-          fontSize: '16px',
-          textTransform:'none'
-        })}>
-        Ver más
-        </Button>
+       {props.verMas && (
+  <Button size="small" sx={(theme) =>({
+    color: 'blue.main',
+    fontWeight: '600',
+    fontSize: '16px',
+    textTransform:'none'
+  })}
+  onClick={props.verMas}
+  >
+  {props.isExpanded ? "Ver menos" : "Ver más"}
+  </Button>
+)}
       </CardActions>
     </Card>
     );

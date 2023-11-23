@@ -1,53 +1,30 @@
-import React, {useState} from 'react'
-import Cards from './Cards'
+import React from 'react'
+
 import '../../styles/Publicaciones.css'
 import SearchBar from '../common/SearchBar'
+import PublicacionesCommon from '../common/PublicacionesCommon'
 export default function Publicaciones() {
-  const [publicacion, setPublicacion] = useState([
-    {
-      title : 'Inversiones Éticas: Más que ganancias',
-      img : 'img/cardImg.jpg',
-      date: '17/04/2023',
-      description : 'Las decisiones financieras han trascendido la mera maximización del rendimiento. Actualmente, muchos inversores desean que sus decisiones reflejen sus valores éticos y morales, dando lugar a las inversiones éticas o sostenibles.',
-    },
-    {
-      title : 'Inversiones Éticas: Más que ganancias',
-      img : 'img/cardImg.jpg',
-      date: '17/04/2023',
-      description : 'Las decisiones financieras han trascendido la mera maximización del rendimiento. Actualmente, muchos inversores desean que sus decisiones reflejen sus valores éticos y morales, dando lugar a las inversiones éticas o sostenibles.',
-    },
-    {
-      title : 'Inversiones Éticas: Más que ganancias',
-      img : 'img/cardImg.jpg',
-      date: '17/04/2023',
-      description : 'Las decisiones financieras han trascendido la mera maximización del rendimiento. Actualmente, muchos inversores desean que sus decisiones reflejen sus valores éticos y morales, dando lugar a las inversiones éticas o sostenibles.',
-    },
-  ])
+
   
   return (
     <div className='container'>
       <div className='encabezado'>
+  
       <div className='searchBar'>
         <SearchBar/>
       </div>
-      <div>
+      <div className='textoPublicaciones'>
         <h3>Publicaciones</h3>
         <h2>Explorando finanzas de impacto</h2>
-        <h4>Conocé cómo decisiones financieras pueden impactar positivamente en la sociedad y el medio ambiente</h4>
+        <p>Conocé cómo decisiones financieras pueden impactar positivamente en la sociedad y el medio ambiente</p>
       </div>
 
 
       </div>
-    <div className='cardContainer'>
-<div className='card'>
+      <div>
 
-
-      {publicacion.map((publi, index) => {
-        return <Cards key={index} title={publi.title} img={publi.img} date={publi.date} description={publi.description}/>
-          
-      })}
+      <PublicacionesCommon/>   
       </div>
-    </div>
     </div>
       
   )
