@@ -21,7 +21,7 @@ export default function Publicaciones() {
 
 
       </div>
-      <div>
+      <div className='containerCard'>
 
       <PublicacionesCommon/>   
       </div>

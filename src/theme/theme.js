@@ -51,6 +51,25 @@ const theme = createTheme({
            
       // ... otros estilos que quieras agregar
     },
+    categorias: {
+      textAlign: 'center',
+      fontFamily: 'Lato',
+      fontSize: '1.375rem',
+      fontStyle: 'normal',
+      fontWeight: 600,
+      lineHeight: '1.5625rem',
+      color: 'black',             
+      
+    },
+    subCategorias:{
+      textAlign: 'center',
+fontFamily: 'Lato',
+fontSize: '1rem',
+fontStyle: 'normal',
+fontWeight: 600,
+lineHeight: '1.5625rem', 
+      color: 'black', 
+    },
 
     label:{
       fontSize: '16px',
