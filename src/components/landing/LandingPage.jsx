@@ -149,16 +149,20 @@ function LandingPage() {
          flexShrink: 0,
          position: 'absolute',
          top:'1030px',
-         left:'16px'
+         left:'16px',
+         mt:'6rem'
         }}>
           <Typography sx={{
             typography:'subCategorias',
+            mt:'2rem'
             
           }} >
           Microemprendimientos Ubuntu
           </Typography>
           <Typography sx={{
             typography:'categorias',
+            mb:'2rem',
+            
             
           }} >
           Categorías

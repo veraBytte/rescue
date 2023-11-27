@@ -80,6 +80,15 @@ lineHeight: '1.5625rem',
       
     
     },
+        card:{
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '25px',
+      fontFamily:'lato',
+      color: 'rgba(9, 60, 89, 1)',
+      
+    
+    },
     subtitulos: {
       fontSize: '18px',
       fontWeight: 500,

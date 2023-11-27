@@ -16,7 +16,7 @@ let info = [
         img : foto,
     },
 ];
-console.log(info.length)
+
 
 
 export const CategoriasContainer = () => {
