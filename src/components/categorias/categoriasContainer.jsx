@@ -1,18 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import CardCategorias from './cardCategorias'
 import foto from '../../img/logo.png'
+import { useDispatch } from 'react-redux';
+import { getCategories } from '../../../store/categoriesSlice';
+
 
 let info = [
     {
-        title : 'Inversiones Éticas: Más que ganancias',
+      id: 1,  
+      name : 'Inversiones Éticas: Más que ganancias',
         img : foto,
     },
     {
-        title : 'Inversiones Éticas: Más que ganancias',
+      id: 2,  
+      name : 'Inversiones Éticas: Más que ganancias',
         img : foto,
     },
     {
-        title : 'Inversiones Éticas: Más que ganancias',
+      id: 3,  
+      name : 'Inversiones Éticas: Más que ganancias',
         img : foto,
     },
 ];
@@ -20,13 +26,19 @@ let info = [
 
 
 export const CategoriasContainer = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCategories());
+  }, [dispatch]);
   
   return (
 
     <div>
    
-      {info.map((item, index) => (
-        <CardCategorias key={index} title={item.title} img={item.img} />
+      {info.map((item) => (
+        <CardCategorias key={item.id} title={item.name} img={item.img} />
       ))}
     </div>
   )
