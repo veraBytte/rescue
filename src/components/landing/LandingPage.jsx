@@ -8,10 +8,12 @@ import {
 
 import heroJPG from "../../assets/monedasHierba.jpg";
 import SearchBar from "../common/SearchBar";
-import CardCategorias from "../categorias/cardCategorias";
+
 import { CategoriasContainer } from "../categorias/categoriasContainer";
 
 function LandingPage() {
+
+  
   return (
     <Container sx={{ position: "absolute", top: 4 }}>
       <Box
@@ -150,7 +152,7 @@ function LandingPage() {
          position: 'absolute',
          top:'1030px',
          left:'16px',
-         mt:'6rem'
+         mt:'10rem'
         }}>
           <Typography sx={{
             typography:'subCategorias',

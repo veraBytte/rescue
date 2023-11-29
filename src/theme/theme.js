@@ -51,6 +51,16 @@ const theme = createTheme({
            
       // ... otros estilos que quieras agregar
     },
+
+    boton:{
+      fontSize: '16px',
+      fontWeight: 700,
+      lineHeight: '20px',
+      fontFamily:'lato',
+      textAlign:'center',
+      color: 'white',
+
+    }
     categorias: {
       textAlign: 'center',
       fontFamily: 'Lato',

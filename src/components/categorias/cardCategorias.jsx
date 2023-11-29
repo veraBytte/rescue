@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 
 const CardCategorias = (props) => {
-    console.log(props)
+    
   return (
     <Box sx={{
       width:328,
