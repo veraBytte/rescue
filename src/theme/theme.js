@@ -27,6 +27,7 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily:['Lato', 'cursive'].join(','),
     titulos: {
       fontSize: '18px',
       fontWeight: 600,
@@ -51,12 +52,50 @@ const theme = createTheme({
       // ... otros estilos que quieras agregar
     },
 
+    boton:{
+      fontSize: '16px',
+      fontWeight: 700,
+      lineHeight: '20px',
+      fontFamily:'lato',
+      textAlign:'center',
+      color: 'white',
+
+    }
+    categorias: {
+      textAlign: 'center',
+      fontFamily: 'Lato',
+      fontSize: '1.375rem',
+      fontStyle: 'normal',
+      fontWeight: 600,
+      lineHeight: '1.5625rem',
+      color: 'black',             
+      
+    },
+    subCategorias:{
+      textAlign: 'center',
+fontFamily: 'Lato',
+fontSize: '1rem',
+fontStyle: 'normal',
+fontWeight: 600,
+lineHeight: '1.5625rem', 
+      color: 'black', 
+    },
+
     label:{
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '24px',
       fontFamily:'lato',
       color: '#090909',
+      
+    
+    },
+        card:{
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '25px',
+      fontFamily:'lato',
+      color: 'rgba(9, 60, 89, 1)',
       
     
     },

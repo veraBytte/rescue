@@ -8,6 +8,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Publicaciones from "./components/publicaciones/Publicaciones";
 import Layout_ex from "./components/layouts/Layout_ex";
 
+
 function App() {
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
             <Route path="/layout" element={<Layout_ex />} />
             {/* Agregar rutas necesarias */}
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </ThemeProvider>
     </>
