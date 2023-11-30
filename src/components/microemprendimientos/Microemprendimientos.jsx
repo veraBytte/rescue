@@ -6,20 +6,22 @@ import { CategoriasContainer } from "../categorias/categoriasContainer";
 
 const Microemprendimientos = () => {
   return (
-    <Container sx={{ position: "absolute", top: 4 }}>
+    <Container sx={{ position: "absolute", top: 7, overflow:'none'}}>
       <Box
         sx={{
-          width: "100%",
+          width: 390,
           height: "fitContent",
-          position: "relative",
+          position: "absolute",          
+          left:0
+      
         }}
       >
         <Box
           sx={{
             position: "relative",
-            maxWidth: "120%",
-            width: "109%",
-            right: 16,
+            maxWidth: "100%",
+            width: "100%",
+            
           }}
         >
           <Box
@@ -100,26 +102,40 @@ const Microemprendimientos = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ position: "absolute", top: 1,  }}>
-        <Box>
+      
+      <Box sx={{
+        position:'absolute',
+        top:'36rem',        
+        pb:'2rem',
+        backgroundImage: `url(/img/backgroundCategorias.svg);)`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+         width: 390,
+        height: "488px",
+        
+        left:0
 
-        <Typography
-          sx={{
-            fontFamily: "Lato",
-            fontSize: 24,
-            fontWeight: 600,
-            lineHeight: 25,
-            letterSpacing: 0,
-            textAlign: "center",
-            position: "relative",
-            top: "17rem",
-          }}
-        >
+      }}>
+        <Box >
+           <Typography sx={{
+            typography:'categorias',
+            mb:'2rem',          
+            position:"relative",
+            right:'1rem',
+            
+            
+            
+          }} >
           Categorías
-        </Typography>
-        <CategoriasContainer />
+          </Typography>
+          <Box sx={{position:'relative', left:'1.6rem', width:'21rem'}}>
+
+   <CategoriasContainer/>
+          </Box>
         </Box>
       </Box>
+     
     </Container>
   );
 };
