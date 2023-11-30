@@ -7,6 +7,7 @@ import LandingPage from "./components/landing/LandingPage";
 import Dashboard from "./components/dashboard/Dashboard";
 import Publicaciones from "./components/publicaciones/Publicaciones";
 import Layout_ex from "./components/layouts/Layout_ex";
+import Microemprendimientos  from "./components/Microemprendimientos/Microemprendimientos";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/publicaciones" element={<Publicaciones />} />
             <Route path="/layout" element={<Layout_ex />} />
+            <Route path="/categorias" element={<Microemprendimientos />} />
             {/* Agregar rutas necesarias */}
           </Routes>
           {/* <Footer /> */}
