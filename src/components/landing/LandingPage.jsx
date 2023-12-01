@@ -163,8 +163,7 @@ function LandingPage() {
           Microemprendimientos Ubuntu
           </Typography>
           <Typography sx={{
-            typography:'categorias',
-            
+            typography:'categorias',      
             
             
           }} >

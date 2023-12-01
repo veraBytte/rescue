@@ -7,8 +7,8 @@ import LandingPage from "./components/landing/LandingPage";
 import Dashboard from "./components/dashboard/Dashboard";
 import Publicaciones from "./components/publicaciones/Publicaciones";
 import Layout_ex from "./components/layouts/Layout_ex";
-import Microemprendimientos  from "./components/Microemprendimientos/Microemprendimientos";
-
+import Categoria from "./components/categorias/Categoria";
+import Microemprendimientos from "./components/microemprendimientos/Microemprendimientos";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             <Route path="/publicaciones" element={<Publicaciones />} />
             <Route path="/layout" element={<Layout_ex />} />
             <Route path="/categorias" element={<Microemprendimientos />} />
+            <Route path="/categorias/:id" element={<Categoria />} />
             {/* Agregar rutas necesarias */}
           </Routes>
           {/* <Footer /> */}
