@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <div>
-      <AppBar position="static" sx={(theme) => ({ bgcolor: theme.palette.primary.light})}>
+      <AppBar position="static" sx={(theme) => ({ bgcolor: theme.palette.primary.light, zIndex:9999})}>
         <Toolbar sx={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}>
           <IconButton edge="start" color="black" aria-label="menu" sx={{ justifySelf: 'start' }} onClick={toggleDrawer}>
             {isMenuIcon ? <MenuIcon /> : <CloseIcon />} {/* Renderiza el icono correspondiente */}

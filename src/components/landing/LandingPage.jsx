@@ -16,7 +16,7 @@ function LandingPage() {
 
   
   return (
-    <Container sx={{ position: "absolute", top: 4 }}>
+    <Container sx={{ position: "absolute", top: 4, zIndex:-1 }}>
       <Box
         sx={{
           width: "100%",
