@@ -60,7 +60,8 @@ const theme = createTheme({
       textAlign:'center',
       color: 'white',
 
-    }
+    },
+
     categorias: {
       textAlign: 'center',
       fontFamily: 'Lato',
