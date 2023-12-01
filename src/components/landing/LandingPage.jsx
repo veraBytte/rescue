@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Box,
+  Button,
   Container,
   Typography,
 } from "@mui/material";
@@ -154,7 +155,7 @@ function LandingPage() {
          left:'16px',
          mt:'10rem'
         }}>
-          <Typography sx={{
+         <Typography sx={{
             typography:'subCategorias',
             mt:'2rem'
             
@@ -162,14 +163,35 @@ function LandingPage() {
           Microemprendimientos Ubuntu
           </Typography>
           <Typography sx={{
-            typography:'categorias',
-            mb:'2rem',
+            typography:'categorias',      
             
             
           }} >
           Categorías
           </Typography>
           <CategoriasContainer/>
+          <Button sx={{
+          display: 'flex',
+          width: '11.5rem',
+          height: '2.5rem',
+          padding: '0.625rem 1.5rem',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '0.625rem',
+          flexShrink: 0,
+          borderRadius: '6.25rem',
+          background: 'var(--Azul, #093C59)',
+          position: 'relative',
+          left: '4.5rem',
+          top:'1.5rem',
+          fontSize: '12px',
+          fontWeight: 700,
+          lineHeight: '20px',
+          fontFamily:'lato',
+          textAlign:'center',
+          color: 'white',
+
+      }} >Ver más categorías</Button>
 
 
         </Box>
