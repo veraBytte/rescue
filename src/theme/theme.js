@@ -29,8 +29,8 @@ const theme = createTheme({
   typography: {
     fontFamily:['Lato', 'cursive'].join(','),
     titulos: {
-      fontSize: '18px',
-      fontWeight: 600,
+      fontSize: '20px',
+      fontWeight: 500,
       lineHeight: '24px',
       fontFamily:'lato',
       color: 'white',
@@ -61,7 +61,10 @@ const theme = createTheme({
       color: 'white',
 
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9084087b60a5bf0365aa9f35eeee311357ad2291
     categorias: {
       textAlign: 'center',
       fontFamily: 'Lato',

@@ -16,7 +16,7 @@ const CardCategorias = (props) => {
         justifyContent: 'center', 
         alignItems:'center',
      
-        mt:1,
+        mt:2,
         mb:2,
         
          
