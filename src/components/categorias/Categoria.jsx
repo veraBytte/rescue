@@ -32,7 +32,7 @@ const Categoria = () => {
 
   let microemprendimientos = [{
     name: 'Inversiones Éticas: Más que ganancias 1',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 1
 
@@ -40,28 +40,28 @@ const Categoria = () => {
   
   {
     name: 'Inversiones Éticas: Más que ganancias 2',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 2
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 3',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 3
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 4',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 4
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 1',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 1
 
@@ -69,28 +69,28 @@ const Categoria = () => {
   
   {
     name: 'Inversiones Éticas: Más que ganancias 2',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 2
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 3',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 3
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 4',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 4
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 1',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 1
 
@@ -98,21 +98,21 @@ const Categoria = () => {
   
   {
     name: 'Inversiones Éticas: Más que ganancias 2',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 2
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 3',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 3
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 4',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 4
 
@@ -264,7 +264,7 @@ const Categoria = () => {
               }
 
               }>
-                <CardMicroemprendimientos img={foto} categoria={category ? category.name : 'Cargando categoría...'} subcategoria={m.subcategoria} nombre={m.name} />
+                <CardMicroemprendimientos img={m.img} categoria={category ? category.name : 'Cargando categoría...'} subcategoria={m.subcategoria} nombre={m.name} />
               </Box>
 
             ))
