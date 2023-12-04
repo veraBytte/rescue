@@ -61,10 +61,7 @@ const theme = createTheme({
       color: 'white',
 
     },
-<<<<<<< HEAD
 
-=======
->>>>>>> 9084087b60a5bf0365aa9f35eeee311357ad2291
     categorias: {
       textAlign: 'center',
       fontFamily: 'Lato',
