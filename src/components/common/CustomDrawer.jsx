@@ -1,19 +1,20 @@
 import React from 'react';
 import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 import theme from '../../theme/theme';
+import { Link } from 'react-router-dom';
 
 function CustomDrawer({ isDrawerOpen, toggleDrawer, userType }) {
 
     const userOptions = {
         normalUser: (
           <>
-            <ListItem button onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/" onClick={toggleDrawer}>
               <ListItemText primary="Inicio" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
-            <ListItem button onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/categorias" onClick={toggleDrawer}>
               <ListItemText primary="Microemprendimientos" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
-            <ListItem button onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/publicaciones" onClick={toggleDrawer}>
               <ListItemText primary="Publicaciones" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
           </>
@@ -26,13 +27,13 @@ function CustomDrawer({ isDrawerOpen, toggleDrawer, userType }) {
             <ListItem button onClick={toggleDrawer}>
               <ListItemText primary="Dashboard Administrador" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
-            <ListItem button onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/categorias" onClick={toggleDrawer}>
               <ListItemText primary="Microemprendimientos" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
             <ListItem button onClick={toggleDrawer}>
               <ListItemText primary="Solicitudes de Contacto" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
-            <ListItem button onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/publicaciones" onClick={toggleDrawer}>
               <ListItemText primary="Publicaciones" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
           </>
