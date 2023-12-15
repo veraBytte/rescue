@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import CustomDrawer from './CustomDrawer'; // Importa el nuevo componente de Drawer
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -17,14 +18,14 @@ function Navbar() {
   return (
     <div>
       <AppBar position="static" sx={(theme) => ({ bgcolor: theme.palette.primary.light, zIndex:9999})}>
-        <Toolbar sx={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}>
+        <Toolbar sx={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center', zIndex: 99999 }}>
           <IconButton edge="start" color="black" aria-label="menu" sx={{ justifySelf: 'start' }} onClick={toggleDrawer}>
             {isMenuIcon ? <MenuIcon /> : <CloseIcon />} {/* Renderiza el icono correspondiente */}
           </IconButton>
           <div style={{ textAlign: 'center' }}>
-            <a href="https://imgur.com/dQ4iUZf">
-              <img src="https://i.imgur.com/dQ4iUZf.jpg" alt="Logo" width="120px" height="56px" />
-            </a>
+          <Link to="/">           
+              <img src="https://i.imgur.com/dQ4iUZf.jpg" alt="Logo" width="120px" height="56px" />         
+            </Link>
           </div>
           {/* Muestra la imagen del administrador si el usuario es de tipo 'adminUser' */}
           <div style={{ justifySelf: 'end' }}>

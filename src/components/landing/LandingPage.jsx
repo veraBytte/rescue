@@ -11,6 +11,7 @@ import heroJPG from "../../assets/monedasHierba.jpg";
 import SearchBar from "../common/SearchBar";
 
 import { CategoriasContainer } from "../categorias/categoriasContainer";
+import PublicacionesCommon from "../common/PublicacionesCommon";
 
 function LandingPage() {
 
@@ -142,7 +143,7 @@ function LandingPage() {
             </Box>
           </Box>
         </Box>
-
+{/* Acá empiezan las categorias */}
         <Box sx={{
          display: 'flex',
          width: '20.5rem',
@@ -193,6 +194,38 @@ function LandingPage() {
 
       }} >Ver más categorías</Button>
 
+
+        </Box>
+        {/* Acá empiezan las publicaciones */}
+        
+        <Box sx={{
+          position: 'absolute',
+          right:-12,
+          top:1420
+        }}>
+          <PublicacionesCommon/>
+          <Button sx={{
+          display: 'flex',
+          width: '11.5rem',
+          height: '2.5rem',
+          padding: '0.625rem 1.5rem',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '0.625rem',
+          flexShrink: 0,
+          borderRadius: '6.25rem',
+          background: 'var(--Azul, #093C59)',
+          position: 'relative',
+          left: '6rem',
+          fontSize: '12px',
+          fontWeight: 700,
+          lineHeight: '20px',
+          fontFamily:'lato',
+          textAlign:'center',
+          color: 'white',
+          mb:"3rem"
+
+      }} >Ir a Publicaciones</Button>
 
         </Box>
       </Box>

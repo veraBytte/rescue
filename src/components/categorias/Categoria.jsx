@@ -32,7 +32,7 @@ const Categoria = () => {
 
   let microemprendimientos = [{
     name: 'Inversiones Éticas: Más que ganancias 1',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 1
 
@@ -40,28 +40,28 @@ const Categoria = () => {
   
   {
     name: 'Inversiones Éticas: Más que ganancias 2',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 2
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 3',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 3
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 4',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 4
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 1',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 1
 
@@ -69,28 +69,28 @@ const Categoria = () => {
   
   {
     name: 'Inversiones Éticas: Más que ganancias 2',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 2
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 3',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 3
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 4',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 4
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 1',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 1
 
@@ -98,21 +98,21 @@ const Categoria = () => {
   
   {
     name: 'Inversiones Éticas: Más que ganancias 2',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 2
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 3',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 3
 
   },
   {
     name: 'Inversiones Éticas: Más que ganancias 4',
-    img: 'img/cardImg.jpg',
+    img: [foto, foto, foto],
     subcategoria: '17/04/2023',
     categoria: 4
 
@@ -248,14 +248,76 @@ const Categoria = () => {
 
           }} >
             Categorías
+            
           </Typography>
-          {category ? <Typography>{category.name}</Typography> : <Typography>Cargando categoría...</Typography>}
+
+
+          {category ?
+          <Box sx={{
+            display: 'flex',
+width: '20.5rem',
+height: '3.5rem',
+flexDirection: 'column',
+justifyContent: 'center',
+flexShrink: 0,
+          }}>
+
+          <Typography sx={{
+            color: 'var(--Azul, #093C59)',
+            textAlign: 'center',
+            fontFamily: 'Lato',
+            fontSize: '1.25rem',
+            fontStyle: 'normal',
+            fontWeight: 500,
+            lineHeight: '1.875rem',
+            position:'relative',
+            top:'-0.5rem',
+            left:'1.8rem',
+            mb:'1rem',
+           
+
+          }}>
+            {category.name}</Typography>  </Box> 
+            
+            
+            : <Typography>Cargando categoría...</Typography>}
+ {/* Descripción categoria */}
+<Box sx={{  display: 'flex',
+width: '20.5rem',
+height: '5.5rem',
+flexDirection: 'column',
+justifyContent: 'center',
+flexShrink: 0,
+position:'relative',
+left:'1.8rem',
+}}>
+
+<Typography
+sx={{
+
+color: 'var(--Negro, #090909)',
+textAlign: 'center',
+fontFamily: 'Lato',
+fontSize: '1rem',
+fontStyle: 'normal',
+fontWeight: 400,
+lineHeight: '1.5625rem', 
+mt:'1rem',
+
+
+}}>
+Conectate con Microemprendimientos que respetan la tierra y priorizan la salud, a través de prácticas agrícolas limpias y alimentos nutritivos.
+</Typography>
+</Box>
+
+        
 <Box sx={{
   display:'flex',
   flexDirection:'column',
   alignItems:'center',
   justifyContent:'center',
-  gap:2
+  gap:2,
+  mt:'4rem'
 }}>
           {
             microemprendimientosFilltrados.map((m, index) => (
@@ -264,7 +326,7 @@ const Categoria = () => {
               }
 
               }>
-                <CardMicroemprendimientos img={foto} categoria={category ? category.name : 'Cargando categoría...'} subcategoria={m.subcategoria} nombre={m.name} />
+                <CardMicroemprendimientos img={m.img} categoria={category ? category.name : 'Cargando categoría...'} subcategoria={m.subcategoria} nombre={m.name} />
               </Box>
 
             ))
