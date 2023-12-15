@@ -24,10 +24,10 @@ function CustomDrawer({ isDrawerOpen, toggleDrawer, userType }) {
             <ListItem button onClick={toggleDrawer}>
               <ListItemText primary="Administrador" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
-            <ListItem button onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/dashboard" onClick={toggleDrawer}>
               <ListItemText primary="Dashboard Administrador" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
-            <ListItem button component={Link} to="/categorias" onClick={toggleDrawer}>
+            <ListItem button component={Link} to="/emprendimientos" onClick={toggleDrawer}>
               <ListItemText primary="Microemprendimientos" sx={{ color: theme.palette.primary.light }} />
             </ListItem>
             <ListItem button onClick={toggleDrawer}>
